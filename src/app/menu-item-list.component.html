@@ -1,0 +1,15 @@
+<header>
+    <!-- <h2>{{menu}}</h2>
+    <div *ngIf="menuItems">{{ menuItems }}</div> -->
+</header>
+<section>
+  <mw-menu-item
+    *ngFor="let menuItem of menuItems"
+    [menuItem]="menuItem"
+    (delete)="onMenuItemDelete($event)"></mw-menu-item>
+</section>
+<footer>
+  <a routerLink="/add">
+    <img src="assets/01.png" class="icon">
+  </a>
+</footer>
