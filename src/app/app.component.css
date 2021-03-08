@@ -1,10 +1,13 @@
+
+
+
 :host {
   display: flex;
   min-height: 100%;
 }
 nav {
   width: 68px;
-  background-color: #53ace4;
+  background-color: hsl(197, 19%, 7%);
 }
 nav .icon {
   width: 48px;
@@ -13,11 +16,12 @@ nav .icon {
 }
 section {
   width: 100%;
-  background-color: #32435b;
+  background-color: hsl(0, 0%, 100%);
 }
 section > header {
   color: #ffffff;
   padding: 10px;
+  text-align:center;
 }
 section > header > h1 {
   font-size: 2em;
@@ -25,3 +29,4 @@ section > header > h1 {
 section > header .description {
   font-style: italic;
 }
+

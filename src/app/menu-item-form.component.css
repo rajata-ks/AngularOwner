@@ -20,7 +20,7 @@ input, select {
   border-color: #53ace4;
   padding: 6px;
 }
-.ng-invalid:not(.ng-pristine):not(.required-invalid) {
+/* .ng-invalid:not(.ng-pristine):not(.required-invalid) {
   border: 1px solid #d93a3e;
 }
 input[required].ng-invalid {
@@ -35,7 +35,7 @@ input[required].ng-invalid:not(.required-invalid) {
 }
 #year {
   width: 50px;
-}
+} */
 button[type=submit] {
   background-color: #45bf94;
   border: 0;

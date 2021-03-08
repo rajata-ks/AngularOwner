@@ -21,6 +21,7 @@ export class MenuItemFormComponent implements OnInit {
       itemName: this.formBuilder.control(''),
       itemDescription: this.formBuilder.control(''),
       itemPrice: this.formBuilder.control(''),
+      menuItemImageUrl: this.formBuilder.control(''),
     });
   }
 

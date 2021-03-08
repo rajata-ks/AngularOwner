@@ -13,7 +13,7 @@ export class MenuItemService {
   
   get(id:Number) {
   
-        return this.http.get<MenuItem[]>(`http://127.0.0.1:3000/app/restaurantMenu/${id}`)
+        return this.http.get<MenuItem[]>(`http://127.0.0.1:8080/app/restaurantMenu/${id}`)
       .pipe(
         map((response: MenuItem[]) => {
           return response;
@@ -27,7 +27,7 @@ export class MenuItemService {
     ///app/addRestaurantMenuItem/
     menuItem.restaurantId = 1;
     console.log(menuItem);
-    return this.http.post('http://127.0.0.1:3000/app/addRestaurantMenuItem', menuItem)
+    return this.http.post('http://127.0.0.1:8080/app/addRestaurantMenuItem', menuItem)
       .pipe(
         catchError(this.handleError)
       );
@@ -36,7 +36,7 @@ export class MenuItemService {
   delete(menuItem: MenuItem) {
     ///app/restaurantMenuItem/:itemId'
     console.log('deleteing id ', menuItem._id);
-    return this.http.delete(`http://127.0.0.1:3000/app/deleteRestaurantMenuItem/${menuItem._id}`)
+    return this.http.delete(`http://127.0.0.1:8080/app/restaurantMenuItem/${menuItem._id}`)
     .pipe(
       catchError(this.handleError)
     );
@@ -62,4 +62,5 @@ export interface MenuItem {
   itemName: String;
   itemDescription: String;
   itemPrice: Number;
+  menuItemImageUrl:String,
 }
